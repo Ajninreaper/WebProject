@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@1,700&family=Joan&family=Montserrat:wght@300&family=Patua+One&family=Poppins:ital,wght@1,200&display=swap');
+@import "/Styles/Nature Hike/Bloggrid.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color:#31493C ;
+}
+
+/* header style  */
+
+header{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    padding:20px;
+    background-color:#31493C;
+    
+}
+.logo{
+   margin-left: 20px;
+}
+/* ----Nav Section---- */
+
+nav ul{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 50px;
+}
+
+
+nav li{
+    
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    margin: 30px;
+    
+ }
+
+ nav a{
+    text-decoration: none;
+    color:#B3B492 ;
+ }
+/* -------------------------- */
+ /* End of Header Section */
+ /* -------------------------- */
+ /* section */
+
+ section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #001A23;
+ }
+section{
+    width:100%;
+  
+}
+ section img{
+    width:250px; 
+    border-radius:5%;
+    
+ }
+
+ .cards{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap: wrap;
+    
+ }
+
+ 
+
+ .card_1{
+    width: 250px;
+    color: #B3B492;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px;
+ }
+ .card_2{
+    width: 250px;
+    color: #B3B492;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px;
+ }
+ .card_3{
+    width: 250px;
+    color: #B3B492;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px;
+ }
+
+ .card_4{
+    width: 250px;
+    color: #B3B492;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px;
+ 
+ }
+
+ .card-content{
+    margin: 20px;
+    background: linear-gradient(
+        hsl(0% 0% 0% / 0),
+        hsl(0% 0% 0% / 100)
+    );
+ }
+ 
+main{
+    background-color: #31493C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ main .journey{
+   font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    margin: 30px;
+ }
+
+.content_section{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding:20px;
+   margin:10px;
+   width: 100%;
+ }
+
+ .content_section li{
+   margin: 5px;
+ }
+
+ .prep{
+   font-size: x-large;
+   margin: 3px;
+ }
+
+ /* Footer Styling */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    background-color:#31493C ;
+    color:#B3B492;
+    padding:5px;
+    
+    
+}
+
+footer img{
+   
+    width: 50px;
+    margin: 10px;
+}
+
+.bttm_link{
+   font-size: x-large;
+   text-decoration: none;
+   color:#B3B492;
+}
+
+
+button{
+   margin: 10px;
+   padding: 5px;
+}
+
+@media(max-width:700px){
+  header{
+   height: 10vh;
+  }
+  header img{
+   height: 53px;
+   width: 98.5px;
+ 
+ }
+ 
+ nav a{
+   font-size: large;
+ }
+ 
+}
+
+@media(max-width:545px){
+   .hdr{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px;
+     }
+    .logo{
+      margin-left: 35px;
+    }
+    nav ul{
+         flex-direction: column;
+         margin: 0;
+    }
+
+    nav li{
+      margin: 0;
+    }
+    nav a{
+      font-size: large;
+    }
+
+   
+    .cards{
+      display: flex;
+      flex-direction:row;
+      justify-content: center ;
+      align-items:center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .icons img{
+      width: 35px;
+    }
+   }

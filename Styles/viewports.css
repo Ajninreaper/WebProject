@@ -1,0 +1,67 @@
+
+/* Small Screens */
+
+@media screen and (max-width:700px){
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "hdr-sm"
+  "as-sm"
+  "sec-sm"
+  "main-sm"
+  "ftr-sm"
+  ;
+}
+/* header section */
+header{
+  height: 10vh;
+  grid-area: hdr-sm;
+ 
+}
+header img{
+  height: 53px;
+  width: 98.5px;
+
+}
+nav a{
+  font-size: large;
+}
+/* Aside Section */
+aside{
+  height: 30vh;
+  grid-area: as-sm;
+   
+}
+/* Quote section */
+section{
+  grid-area: sec-sm;
+}
+.overlay{
+  height: 30vh;
+}
+
+blockquote{
+  height: 20vh;
+  font-size: x-large;
+}
+.foot-prints img{
+  display:none;
+}
+/* Main Section */
+main{
+  grid-area: main-sm;
+}
+
+/* Footer Section */
+footer{
+
+  grid-area: ftr-sm;
+}
+footer p{
+  font-size: small;
+}
+
+}
+

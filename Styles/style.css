@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@1,700&family=Joan&family=Montserrat:wght@300&family=Patua+One&display=swap');
+@import "/Styles/grid.css";
+@import "/Styles/viewports.css";
+
+
+/* header style  */
+
+header{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    padding:20px;
+}
+
+/* ----Nav Section---- */
+
+nav ul{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+
+nav li{
+    
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    margin:20px;  
+ }
+
+ nav a{
+    text-decoration: none;
+    color:#B3B492 ;
+ }
+/* -------------------------- */
+ /* End of Header Section */
+ /* -------------------------- */
+
+ /* Aside Styling */
+ aside{
+    width:auto; 
+    background-image: url(../Media/Black&white.jpg);
+    background-size: cover;
+    text-align: center;
+ }
+ 
+ aside ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 35px;
+      
+ }
+
+ aside li{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    padding: 20px;
+ }
+
+ aside a{
+    text-decoration: none;
+    color:#B3B492 ;
+ }
+
+/* ----------------------- */
+/* End of Aside */
+/* ----------------------- */
+
+/* Section Styling */
+ section{
+    background-image: url(../Media/Misty-trees.jpg);
+    background-size: cover;
+ }
+
+ .overlay{
+    position: relative;
+    max-width: 100%;
+    padding: 100px;
+    background: rgba(49, 73, 60,.7);
+ }
+
+.quote-sec{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: #B3B492;
+    font-size: xx-large;
+    margin:20px;
+    padding:20px;
+    width:100%;  
+}
+
+
+.foot-prints{
+    display: flex;
+    justify-content:flex-end;
+}
+
+/* ----------------------- */
+/* End of Section Styling */
+/* ----------------------- */
+
+/* Main Carousel Gallery */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+main h1{ 
+   font-size:3em;
+   color: #B3B492;
+   margin:10px;
+}
+
+.carousel{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;  
+    width:50%;
+    
+}
+figure{
+    position:relative;
+    width:500%;
+    margin: 0;
+    left: 0; 
+    animation: carousel 20s infinite;
+}
+
+figure img{
+    width: 20%;
+    padding-right: 20px;
+    float: left; 
+}
+
+@keyframes carousel{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%
+    }
+    100%{
+        left: -400%;
+    }
+}
+/* End of Main  */
+
+/* Footer Styling */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    background-color:#31493C ;
+    color:#B3B492;
+    padding:5px;
+    width: 100%;
+}
+
+footer img{
+    width: 50px;
+    margin: 10px;
+}
+
+/* Global */
+h1,h3{
+    font-family:'Gentium Plus', serif;
+}

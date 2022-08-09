@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="109px" viewBox="0 0 109 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Linkedin Logo</title>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-435.000000, -47.000000)">
+            <g id="Linkedin-Logo" transform="translate(435.000000, 47.000000)">
+                <circle id="Oval" fill="#B3B492" cx="54.5" cy="54.5" r="54.5"></circle>
+                <text id="in" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="72" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="23" y="77">in</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

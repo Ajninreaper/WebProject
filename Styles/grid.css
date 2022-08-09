@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr ;
+    grid-template-areas: 
+    "hdr hdr hdr hdr"
+    "asd sec sec sec"
+    "asd m1 m1 m1"
+    "ftr ftr ftr ftr"
+    ;
+    
+}
+
+header{
+    background-color:#31493C;
+    grid-area: hdr;
+}
+aside{
+    background-color: aqua;
+    grid-area: asd;
+}
+section{
+    background-color: aqua;
+    grid-area: sec;
+}
+main{
+    background-color: #fff;
+    grid-area: m1;
+}
+footer{
+    background-color:#31493C;
+    grid-area: ftr;
+}
+
+/* Nav Hoover */
+nav a {
+    background-image: linear-gradient(
+      to right,
+      #B3B492,
+      #B3B492 50%,
+      #fff 50%
+    );
+        background-size: 200% 100%;
+        background-position: -100%;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+  }
+
+ nav a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+
+ nav a:hover {
+    background-position: 0;
+   }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  /* Blog post hoover */
+
+  .blog-post a{
+    background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      #001923,
+      #31493C,
+      #B3B392
+
+
+      /* rgba(255, 0, 0, 1), */
+      /* rgba(255, 0, 180, 1), */
+      /* rgba(0, 100, 200, 1) */
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  }
+
+  .blog-post a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+
+  /* Blog Post Heading */
+  .blog-post h3{
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #B3B392;
+  }
